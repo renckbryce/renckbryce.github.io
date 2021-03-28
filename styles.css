@@ -1,0 +1,71 @@
+html {
+    background: url(images/flowers.jpg) no-repeat center center fixed;
+    /* background: rgb(43, 48, 65); */
+    background-size: cover;
+}
+
+body {
+    background: rgba(73, 73, 73, 0.4);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    /* background: rgb(80, 80, 80); */
+    padding: 20px;
+}
+
+section {
+    color: rgb(85, 85, 85);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 10px;
+}
+
+div {
+    margin: auto;
+    width: 100px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    text-align: center;
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+a {
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
