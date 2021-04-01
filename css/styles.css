@@ -1,0 +1,262 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+/* Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* Basic */
+
+html {
+  scroll-behavior: smooth;
+  background: rgb(178, 188, 201);
+}
+
+body {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Size */
+  min-height: 100vh;
+
+  /* Background */
+  background: url(../images/flowers.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav ul {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  max-width: 50em;
+}
+
+nav li {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin: 0.4em 0 ;
+}
+
+.content {
+  margin: auto;
+  max-width: 50ch;
+  padding: 1em;
+}
+
+section {
+  color: rgb(50, 50, 50);
+  font-size: 1.2rem;
+  margin: 2em 0;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: black;
+  z-index: 1;
+}
+
+nav a span{
+  position: absolute;
+  top: 2em;
+  left: 2em;
+}
+
+nav a span:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+
+label {
+  margin: 1em auto 0;
+  text-align: center;
+  width: 100%;
+}
+
+.example {
+  margin: 0.2em auto;
+  width: 100%;
+  font-size: .75em;
+}
+
+form ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0;
+  padding: 0;
+  list-style: none;
+  max-width: 50em;
+}
+
+form li {
+  font-size: 0.8em;
+}
+
+li label {
+  margin-left: 0.5em;
+}
+
+input[type="text"] {
+  background: white;
+  border: gray;
+  border-radius: 0.3em;
+  box-shadow: 2px 2px 2px;
+  margin: 0.5em auto 0;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.name {
+  margin: auto;
+}
+
+input[type="button"],
+input[type="submit"] {
+  background: white;
+  border: gray;
+  border-radius: 0.5em;
+  box-shadow: 5px 5px 5px;
+  margin: 0.5em auto;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: rgb(175, 175, 175);
+}
+
+input[type="button"]:active,
+input[type="submit"]:active {
+  box-shadow: 2px 2px 2px;
+}
+
+.guestList {
+  width: 100%;
+}
+
+.rmbtn {
+  max-width: 4em;
+  font-size: 1rem;
+}
+
+.guestList {
+  display: flex;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: auto;
+  /* padding-top: 1em; */
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 100%;
+  border: solid 1px rgb(75, 75, 75);
+}
+
+.names {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 3em;
+  font-size: 5rem;
+}
+
+.photoViewer {
+  display: grid;
+}
+
+@keyframes fadeIn {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    background: rgba(0, 0, 0, 1);
+  }
+  to {
+    background: rgba(0, 0, 0, 0);
+  }
+}
