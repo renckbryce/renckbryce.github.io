@@ -86,7 +86,7 @@ nav ul {
 nav li {
   margin: 0 auto;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 nav a {
@@ -101,7 +101,7 @@ nav a:hover {
 h1 {
   text-align: center;
   font-style: italic;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0.4em 0 ;
 }
 
@@ -113,7 +113,7 @@ h1 {
 
 section {
   color: rgb(50, 50, 50);
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin: 2em 0;
 }
 
@@ -143,6 +143,7 @@ form {
 }
 
 label {
+  font-size: 4rem;
   margin: 1em auto 0;
   text-align: center;
   width: 100%;
@@ -151,7 +152,11 @@ label {
 .example {
   margin: 0.2em auto;
   width: 100%;
-  font-size: .75em;
+  font-size: 1.5em;
+}
+
+.answer {
+  font-size: 1.5em;
 }
 
 form ul {
@@ -192,6 +197,8 @@ input[type="submit"] {
   border-radius: 0.5em;
   box-shadow: 5px 5px 5px;
   margin: 0.5em auto;
+  min-width: 10em;
+  font-size: 1.5em;
 }
 
 input[type="button"]:hover,
@@ -236,7 +243,7 @@ hr {
   width: 100%;
   text-align: center;
   top: 3em;
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .photoViewer {

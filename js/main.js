@@ -63,5 +63,7 @@ function SubmitRsvp(event) {
     event.preventDefault();
 
     // Get all input information from the form
+    console.log(document.querySelectorAll("#rsvpForm input[type=text]"));
+    console.log(document.querySelectorAll("#rsvpForm input[type=radio]"));
     
 }
