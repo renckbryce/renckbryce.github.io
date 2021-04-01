@@ -18,7 +18,7 @@ function StickyNav() {
         navbar.classList.add("sticky");
         navbar.style.animation="fadeIn 1s";
     }
-    else {
+    else if(navbar.classList.contains("sticky")){
         navbar.classList.remove("sticky");
         navbar.style.animation="fadeOut 1s";
     }
@@ -35,9 +35,9 @@ function AddGuest() {
 
     let rmBtn = document.createElement("input");
     rmBtn.setAttribute("type", "button");
-    rmBtn.setAttribute("value", "Remove");
-    rmBtn.setAttribute("class", "rmbtn");
-    rmBtn.setAttribute("data-guest", numGuests)
+    rmBtn.setAttribute("value", "Remove  Guest");
+    rmBtn.classList.add("rmbtn");
+    rmBtn.setAttribute("data-guest", numGuests);
     guestList.appendChild(rmBtn);
 
     rmBtn.addEventListener("click", RemoveGuest);

@@ -86,7 +86,7 @@ nav ul {
 nav li {
   margin: 0 auto;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 nav a {
@@ -101,8 +101,14 @@ nav a:hover {
 h1 {
   text-align: center;
   font-style: italic;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin: 0.4em 0 ;
+}
+
+h2 {
+  font-size: 4rem;
+  margin: auto;
+  text-align: center;
 }
 
 .content {
@@ -143,8 +149,8 @@ form {
 }
 
 label {
-  font-size: 4rem;
-  margin: 1em auto 0;
+  font-size: 3.5rem;
+  margin: 0.5em auto 0;
   text-align: center;
   width: 100%;
 }
@@ -152,11 +158,12 @@ label {
 .example {
   margin: 0.2em auto;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 2.5rem;
 }
 
 .answer {
-  font-size: 1.5em;
+  font-size: 2.5rem;
+
 }
 
 form ul {
@@ -169,7 +176,7 @@ form ul {
 }
 
 form li {
-  font-size: 0.8em;
+  font-size: 2rem;
 }
 
 li label {
@@ -184,6 +191,7 @@ input[type="text"] {
   margin: 0.5em auto 0;
   padding: 0 10px;
   text-align: center;
+  font-size: 2rem;
 }
 
 .name {
@@ -198,7 +206,7 @@ input[type="submit"] {
   box-shadow: 5px 5px 5px;
   margin: 0.5em auto;
   min-width: 10em;
-  font-size: 1.5em;
+  font-size: 3rem;
 }
 
 input[type="button"]:hover,
@@ -212,24 +220,21 @@ input[type="submit"]:active {
   box-shadow: 2px 2px 2px;
 }
 
+input[type="radio"] {
+  margin: auto;
+}
+
 .guestList {
   width: 100%;
 }
 
-.rmbtn {
-  max-width: 4em;
-  font-size: 1rem;
+input[type="button"].rmbtn {
+  font-size: 2rem;
+  min-width: 6em;
 }
 
 .guestList {
   display: flex;
-}
-
-h2 {
-  font-size: 2.5rem;
-  margin: auto;
-  /* padding-top: 1em; */
-  text-align: center;
 }
 
 hr {
