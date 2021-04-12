@@ -9,7 +9,7 @@
     <body>
         <header>
 
-            <h1>0-0-22</h1>
+            <h1 class="date">0-0-22</h1>
 
             <nav id="navbar">
                 <ul>
@@ -42,22 +42,29 @@
 
           
                     <!-- Attendance -->
-                    <label for="attending">Will you be attending?</label>
+                    <label>Will you be attending?</label>
                     <ul>
-                        <li><input type="radio" name="attendance" id="attending" value="Yes"><label for="attending" class="answer">Yes</label></li>
-                        <li><input type="radio" name="attendance" id="notAttending" value="No"><label for="notAttending" class="answer">No</label></li>
+                        <li>
+                            <input type="radio" name="attendance" id="attending" value="Yes">
+                            <label for="attending" class="answer">Yes</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="attendance" id="notAttending" value="No">
+                            <label for="notAttending" class="answer">No</label>
+                        </li>
                     </ul>
 
 
                     <!-- Guests -->
-                    <label for="guests">Guests</label>
+                    <label>Guests</label>
                     <input type="button" value="Add Guest" id="NewGuestBtn">
 
-                    <ul id="guests" class="guestList"></ul>
+                    <ul class="guestList"></ul>
 
                     <!-- Submit -->
                     <input type="submit" value="Submit">
                 </form>
+
             </section>
 
             <!-- Info Sections -->
@@ -92,8 +99,16 @@
                     Photos
                 </h2>
 
-                <div class="photoViewer">
-                    <img src="https://www.fillmurray.com/640/360" alt="picture">
+                <div class="gallery">
+                    <img src="https://source.unsplash.com/random/300x300?engagement">
+                    <img src="https://source.unsplash.com/random/300x300?couple">
+                    <img src="https://source.unsplash.com/random/300x300?person">
+                    <img src="https://source.unsplash.com/random/300x300?love">
+                    <img src="https://source.unsplash.com/random/300x300?wedding">
+                    <img src="https://source.unsplash.com/random/300x300?summer">
+                    <img src="https://source.unsplash.com/random/300x300?trees">
+                    <img src="https://source.unsplash.com/random/300x300?happy">
+                    <img src="https://source.unsplash.com/random/300x300?fun">
                 </div>
             </section>
         </section>

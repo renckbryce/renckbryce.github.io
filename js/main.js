@@ -1,17 +1,40 @@
 window.onscroll = function() {StickyNav()};
 
-let navbar = document.querySelector("nav");
-let navOffset = navbar.offsetTop;
+const navbar = document.querySelector("nav");
+const navOffset = navbar.offsetTop;
 
-let guestList = document.querySelector("#guests");
-let numGuests = 0;
+const guestList = document.querySelector(".guestList");
+const numGuests = 0;
 
 // Add behavior for add guest button.
 document.getElementById("NewGuestBtn").addEventListener("click", AddGuest);
 
 // Add behavior for RSVP submit
-let rsvpForm = document.getElementById("rsvpForm")
-rsvpForm.addEventListener("submit", SubmitRsvp)
+const rsvpForm = document.getElementById("rsvpForm");
+rsvpForm.addEventListener("submit", SubmitRsvp);
+
+const lightbox = document.createElement("div");
+lightbox.id = "lightbox";
+document.body.appendChild(lightbox);
+
+lightbox.addEventListener("click", e => {
+    if(e.target != e.currentTarget) return;
+    lightbox.classList.remove("active");
+})
+
+galleryImages = document.querySelectorAll(".gallery img");
+galleryImages.forEach(image => {
+    image.addEventListener("click", e => {
+        lightbox.classList.add("active");
+        const img = document.createElement("img");
+        img.src = image.src;
+        if(lightbox.firstChild)
+        {
+            lightbox.removeChild(lightbox.firstChild)
+        }
+        lightbox.appendChild(img);
+    });
+});
 
 function StickyNav() {
     if(window.pageYOffset > navOffset) {
