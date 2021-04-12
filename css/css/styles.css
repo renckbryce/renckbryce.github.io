@@ -1,0 +1,298 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+/* Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* Basic */
+
+html {
+  scroll-behavior: smooth;
+  background: rgb(178, 188, 201);
+  font-size: 100%;
+}
+
+header {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Size */
+  min-height: 100vh;
+
+  /* Background */
+  background: url(../images/flowers.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  color: rgb(50, 50, 50);
+  font-size: 2rem;
+  margin: 2em 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  font-size: 3.5rem;
+  margin: 0.4em 0 ;
+}
+
+h2 {
+  font-size: 4rem;
+  margin: auto;
+  text-align: center;
+}
+
+label {
+  font-size: 3.5rem;
+  margin: 0.5em auto 0;
+  text-align: center;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 50em;
+}
+
+nav li {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: auto;
+  width: 100%;
+  border: solid 1px rgb(75, 75, 75);
+}
+
+input[type="text"] {
+  background: white;
+  border: gray;
+  border-radius: 0.3em;
+  box-shadow: 2px 2px 2px;
+  margin: 0.5em auto 0;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: rgb(175, 175, 175);
+}
+
+input[type="button"]:active,
+input[type="submit"]:active {
+  box-shadow: 2px 2px 2px;
+}
+
+input[type="radio"] {
+  margin: auto;
+}
+
+input[type="button"],
+input[type="submit"] {
+  background: white;
+  border: gray;
+  border-radius: 0.5em;
+  box-shadow: 5px 5px 5px;
+  margin: 0.5em auto;
+  min-width: 10em;
+  font-size: 3rem;
+}
+
+input[type="button"].rmbtn {
+  font-size: 2rem;
+  min-width: 6em;
+}
+
+form ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0;
+  padding: 0;
+  list-style: none;
+  max-width: 50em;
+}
+
+form li {
+  font-size: 2rem;
+}
+
+li label {
+  margin-left: 0.5em;
+}
+
+.content {
+  margin: auto;
+  max-width: 50ch;
+  padding: 1em;
+}
+
+.example {
+  margin: 0.2em auto;
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+.answer {
+  font-size: 2.5rem;
+
+}
+
+.name {
+  margin: auto;
+}
+
+.guestList {
+  width: 100%;
+}
+
+.guestList {
+  display: flex;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: black;
+  z-index: 1;
+}
+
+.names {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 3em;
+  font-size: 6rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  align-content: start;
+  gap: 1em;
+  margin: 1.5em auto;
+  height: 100vh;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  padding: 8px;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 1em;
+}
+
+@keyframes fadeIn {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    background: rgba(0, 0, 0, 1);
+  }
+  to {
+    background: rgba(0, 0, 0, 0);
+  }
+}

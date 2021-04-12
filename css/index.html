@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" href="#">
+    </head>
+
+    <body>
+        <header>
+
+            <h1 class="date">0-0-22</h1>
+
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#rsvp">RSVP</a></li>
+                    <li><a href="#Venue">Venue</a></li>
+                    <li><a href="#Travel">Travel</a></li>
+                    <li><a href="#Photos">Photos</a></li>
+                </ul>
+            </nav>
+
+            <h1 class="names">Bryce & Joellen</h1>
+
+        </header>
+
+        <!-- Page Content -->
+        <section class="content" id="rsvp">
+            <section>
+                <h2>
+                    RSVP
+                </h2>
+
+                <!-- RSVP Form -->
+                <form id="rsvpForm">
+                    <!-- Name -->
+                    <label>Name</label>
+                    <input type="text" name="firstName" class="name" id="firstName">
+                    <label for="firstName" class="example">First Name</label>
+                    <input type="text" name="lastName" class="name" id="lastName">
+                    <label for="lastName" class="example">Last Name</label>
+
+          
+                    <!-- Attendance -->
+                    <label>Will you be attending?</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="attendance" id="attending" value="Yes">
+                            <label for="attending" class="answer">Yes</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="attendance" id="notAttending" value="No">
+                            <label for="notAttending" class="answer">No</label>
+                        </li>
+                    </ul>
+
+
+                    <!-- Guests -->
+                    <label>Guests</label>
+                    <input type="button" value="Add Guest" id="NewGuestBtn">
+
+                    <ul class="guestList"></ul>
+
+                    <!-- Submit -->
+                    <input type="submit" value="Submit">
+                </form>
+
+            </section>
+
+            <!-- Info Sections -->
+            <hr id="Venue">
+
+            <section>
+                <h2>
+                    Venue
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos labore sequi temporibus vel quibusdam soluta, nesciunt error odit consequatur quisquam.
+                </p>
+            </section>
+
+            <hr id="Travel">
+
+            <section>
+                <h2>
+                    Travel
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure rem nulla, libero amet minus quod ratione officia nobis fuga aliquam.
+                </p>
+            </section>
+
+            <hr id="Photos">
+
+            <section>
+                <h2>
+                    Photos
+                </h2>
+
+                <div class="gallery">
+                    <img src="https://source.unsplash.com/random/300x300?engagement">
+                    <img src="https://source.unsplash.com/random/300x300?couple">
+                    <img src="https://source.unsplash.com/random/300x300?person">
+                    <img src="https://source.unsplash.com/random/300x300?love">
+                    <img src="https://source.unsplash.com/random/300x300?wedding">
+                    <img src="https://source.unsplash.com/random/300x300?summer">
+                    <img src="https://source.unsplash.com/random/300x300?trees">
+                    <img src="https://source.unsplash.com/random/300x300?happy">
+                    <img src="https://source.unsplash.com/random/300x300?fun">
+                </div>
+            </section>
+        </section>
+
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
